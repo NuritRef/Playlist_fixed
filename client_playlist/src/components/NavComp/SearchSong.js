@@ -7,7 +7,7 @@ export default function SearchSong(props){
     const isPlaying = useContext(IsPlaying)
     const list = useContext(SongsList)
     const song = props.search
-    // console.log(list)
+    console.log("איןד ןד רקמגקרןמע איק דםמעד!")
 
     const handleAdd=()=>{
         const newSong = {songName:song.title,src:song.url,imgUrl:song.thumbnail.url}

@@ -41,9 +41,9 @@ export default function Search(props){
         <div id="PopUpScreen">
             {/* <input className="search" type="text" id="userSearch" placeholder="Search" onInput={(e)=>setSearchBar(e.target.value)}></input>
             <button onClick={getSearch}>search</button> */}
-            {props.mode[0]&&searchList.results&&searchList.results.map(song=>{
+            {props.mode[0]&&searchList&&searchList.map(song=>{
                 return(
-                    <div className="songSearchSection">
+                    <div className="songSection">
                     <SearchSong search = {song}></SearchSong>
                     </div>
                 )
