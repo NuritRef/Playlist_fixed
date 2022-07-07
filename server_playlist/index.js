@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.listen(PORT,()=>console.log("connection success"))
 
-app.use('/search',require('./Routes/searchRouter'))
+app.use('/',require('./Routes'))
 
-// require('./DL/db').myConnect()
+require('./DL/db').myConnect()
 

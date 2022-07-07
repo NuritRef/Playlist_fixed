@@ -15,5 +15,5 @@ router.get('/:query', async (req,res)=>{
     }
 })
 
-// post,put
+
 module.exports = router

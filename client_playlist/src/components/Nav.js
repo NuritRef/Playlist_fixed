@@ -9,7 +9,7 @@ import SongsList from "../contexts/SongsList"
 
 export default function Nav(props){
     const isPlaying = useContext(IsPlaying)
-    const list = useContext(SongsList)
+    // const list = useContext(SongsList)
     // const [searchMode,setSearchMode] = useState(false)
 
     // const handleClick = ()=>{

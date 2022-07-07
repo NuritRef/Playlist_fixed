@@ -16,23 +16,26 @@ export default function Song(props){
         // console.log(isPlaying[0])
     }
 
-    const handleRemove = ()=>{
-        // console.log(s)
-        const newList = list[0].filter(song=> song != s)
-        list[1](newList)
+
+    // TODO: handle with server!!!!!!
+    // const handleRemove = ()=>{
+    //     // console.log(s)
+    //     const newList = list[0].filter(song=> song != s)
+    //     list[1](newList)
         
-    }
+    // }
     
 
     return(
         <div className="songSection">
             <div className="song">
-                <button className="remove" onClick={handleRemove}>{"🗑️"}</button>
+                <button className="remove" onClick={console.log("handleRemove")}>{"🗑️"}</button>
                 <button className="play" onClick={handleSong}>{"▶️"}</button>
-                <span>{s.songName}</span>
+                
 
             </div>
-            <img className="imgSong" src={s.imgUrl}></img>
+            <span>{s.title}</span>
+            <img className="imgSong" src={s.img}></img>
         </div>
     )
 }
