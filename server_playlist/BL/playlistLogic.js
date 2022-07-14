@@ -12,7 +12,7 @@ async function addSong(data) {
     if (!title || !img || !src) 
         throw ({code:400,message:"missing data"})
 
-    const song = await userController.create(data)
+    const song = await songController.create(data)
     if (!song) throw ({code:420,message:"cannot add song to playlist"})
     return song
 }

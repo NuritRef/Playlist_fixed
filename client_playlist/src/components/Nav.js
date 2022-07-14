@@ -18,7 +18,6 @@ export default function Nav(props){
     return (
         <>
         <SongList></SongList>
-        {/* <button onClick={handleClick}>➕</button> */}
         {props.mode[0] && <Search mode = {props.mode} search={props.search}></Search>}
         </>
     )

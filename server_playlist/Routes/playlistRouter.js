@@ -16,6 +16,16 @@ router.get('/', async (req,res)=>{
     }
 })
 
+router.post('/', async (req,res)=>{
+    try {
+        const playlistResult = await playlistLogic.addSong(req.body)
+        res.send({code:200, msg:playlistResult})
+    }
+    catch (error){
+        console.log(error)
+    }
+})
+
 
 module.exports = router
 

@@ -36,7 +36,7 @@ export default function Search(props){
             <button className="close-search" onClick={handleClose}>
               {"X"}
             </button>
-            <h3>add to playlist-</h3>
+            <h3>Add to playlist-</h3>
           </div>
           {console.log("search list: ", searchList)}
           <div className="found-list">
@@ -76,7 +76,7 @@ export default function Search(props){
     // )
 
 
-    
+
 // const options = {
     //     method: 'GET',
     //     url: 'https://simple-youtube-search.p.rapidapi.com/search',
